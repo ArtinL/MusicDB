@@ -1,0 +1,201 @@
+/*****************************************
+ * Author: Artin Lahni
+ * Date: 06-09-2023
+ * CS 290
+*****************************************/
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 6px;
+    background-color: #227a25;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #19521d;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #333;
+}
+
+
+#songTableContainer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#songTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#songTable th,
+#songTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#songTable th {
+    background-color: #f2f2f2;
+}
+
+#songTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#songTable tr:hover {
+    background-color: #f0f0f0;
+}
+
+#songTable tr.selectedRow {
+    background-color: rgb(57, 57, 57);
+    color: white;
+}
+
+#manipulate {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #acacac;
+    padding: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #227a25;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #19521d;
+    transform: scale(1.05);
+}
+
+.nav-button:active {
+    background-color: #333;
+}
+
+
+footer {
+    box-sizing: border-box;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #227a25;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #19521d;
+    transform: scale(1.05);
+}
+
+form input[type="submit"]:active {
+    background-color: #333;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.filter-container button {
+    padding: 5px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.hidden {
+    display: none;
+}

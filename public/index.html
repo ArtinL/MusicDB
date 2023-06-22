@@ -1,0 +1,77 @@
+<!------------------------
+    Author: Artin Lahni
+    Date: 06-09-2023>
+    CS 290
+------------------------->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Database</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Song Database</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-buttons">
+            <a href="add-form.html" class="nav-button">Add Song</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="songTableContainer">
+            <div class="filter-container">
+                <select id="genreDropdown"></select>
+                <button id="filterBtn">Filter</button>
+                <button id="clearBtn" class="hidden">Clear</button>
+            </div>
+            <table id="songTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Date Released</th>
+                        <th>Popularity</th>
+                        <th>Genre</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically added here -->
+                </tbody>
+            </table>
+            <div id="manipulate">
+                <button id="deleteBtn">Delete Selected</button>
+                <button id="updateBtn">Update Selected</button>
+            </div>
+            <div id="updateFormContainer" class="hidden">
+                <form id="updateForm">
+                    <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="artist" placeholder="Artist" required>
+                    <input type="date" id="dateReleased" placeholder="Date Released" required>
+                    <input type="number" id="popularity" placeholder="Popularity (1-10)" required>
+                    <input type="text" id="genre" placeholder="Genre (comma-separated)" required>
+                    <button type="submit">Update Song</button>
+                </form>
+            </div>
+    
+        </div>
+    </main>
+    
+
+
+    <footer class="footer">
+        <p>Copyright &copy; 2023 Artin Lahni</p>
+    </footer>
+</body>
+
+</html>
